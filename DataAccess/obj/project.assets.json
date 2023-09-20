@@ -1043,19 +1043,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\guido\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\guido\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\guido\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1069,8 +1069,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\Models\\Models.csproj"
+            "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\Models\\Models.csproj"
             }
           }
         }

@@ -1521,19 +1521,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\guido\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\products-api\\products-api.csproj",
+      "projectUniqueName": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\products-api\\products-api.csproj",
       "projectName": "products-api",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\products-api\\products-api.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\products-api\\obj\\",
+      "projectPath": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\products-api\\products-api.csproj",
+      "packagesPath": "C:\\Users\\guido\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\products-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\guido\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1547,8 +1547,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\C#\\products-api\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\DataAccess\\DataAccess.csproj"
             }
           }
         }
