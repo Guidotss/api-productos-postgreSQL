@@ -11,3 +11,16 @@ C:\Users\Administrator\Desktop\C#\products-api\Models\obj\Debug\net7.0\refint\Mo
 C:\Users\Administrator\Desktop\C#\products-api\Models\obj\Debug\net7.0\Models.pdb
 C:\Users\Administrator\Desktop\C#\products-api\Models\obj\Debug\net7.0\Models.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\C#\products-api\Models\obj\Debug\net7.0\ref\Models.dll
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\bin\Debug\net7.0\Models.deps.json
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\bin\Debug\net7.0\Models.runtimeconfig.json
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\bin\Debug\net7.0\Models.dll
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\bin\Debug\net7.0\Models.pdb
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.AssemblyInfoInputs.cache
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.AssemblyInfo.cs
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.dll
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\refint\Models.dll
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.pdb
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.genruntimeconfig.cache
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\ref\Models.dll

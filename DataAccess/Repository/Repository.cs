@@ -30,7 +30,7 @@ namespace DataAccess.Repository
         }
 
 
-        public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includesProperties = "", bool isTracking)
+        public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includesProperties = "", bool isTracking = true)
         {
             IQueryable<T> query = dbSet;
 
