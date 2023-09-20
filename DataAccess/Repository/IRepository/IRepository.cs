@@ -9,7 +9,7 @@ namespace DataAccess.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {
-        Task<T> GetAsync(string id);
+        Task<T> GetAsync(Guid id);
 
         Task<IEnumerable<T>> GetAllAsync(
             Expression<Func<T, bool>> filter = null,
@@ -24,9 +24,9 @@ namespace DataAccess.Repository.IRepository
             bool isTracking = true
         );
 
-        Task AddAsync();
+        Task AddAsync(T entity);
 
-        void Remove(string id); 
+        void Remove(T entity); 
 
 
         void RemoveRange(IEnumerable<T> entity); 
