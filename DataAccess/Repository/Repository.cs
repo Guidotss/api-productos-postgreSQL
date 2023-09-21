@@ -91,6 +91,11 @@ namespace DataAccess.Repository
             await dbSet.AddAsync(entity);  
         }
 
+        public async Task AddRangeAsync(IEnumerable<T> entity)
+        {
+            await dbSet.AddRangeAsync(entity); 
+        }
+
         public void Remove(T entity)
         {
             dbSet.Remove(entity);

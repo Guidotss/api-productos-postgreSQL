@@ -1,4 +1,6 @@
 using DataAccess.Data;
+using DataAccess.Repository;
+using DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 
@@ -17,6 +19,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseNpgsql(connectionString)
 
 ); 
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
 var app = builder.Build();

@@ -26,6 +26,8 @@ namespace DataAccess.Repository.IRepository
 
         Task AddAsync(T entity);
 
+        Task AddRangeAsync(IEnumerable<T> entity);
+
         void Remove(T entity); 
 
 
