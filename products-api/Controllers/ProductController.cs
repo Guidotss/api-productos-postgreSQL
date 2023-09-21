@@ -112,8 +112,25 @@ namespace products_api.Controllers
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> DeleteProduct(Guid id)
         {
+            try
+            {
+                var product = await _unitOfwork.Product.GetAsync(id);
+                Console.WriteLine(id); 
+                if(product == null)
+                {
+                    return NotFound(new { ok = false, message = "Product with id: " + id + " not found" }); 
+                }
+
+                _unitOfwork.Product.Remove(product);
+                await _unitOfwork.Save();
+                return Ok(new { ok = true, message = "Product deleted successfully" });
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, new { ok = false, error = "Internal server error", message = ex.Message });
+            }
         }
     }
 }
