@@ -14,7 +14,7 @@ namespace products_api.Controllers
         {
             seedService = new SeedService(unitOfWork);
         }
-        [HttpGet]
+        [HttpGet]   
         public async Task<IActionResult>SeedData()
         {
             try

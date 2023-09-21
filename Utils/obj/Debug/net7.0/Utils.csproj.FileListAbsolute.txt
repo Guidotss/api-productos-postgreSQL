@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\bin\Debug\net7.0\Utils.deps.json
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\bin\Debug\net7.0\Utils.dll
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\bin\Debug\net7.0\Utils.pdb
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\obj\Debug\net7.0\Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\obj\Debug\net7.0\Utils.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\obj\Debug\net7.0\Utils.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\obj\Debug\net7.0\Utils.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\obj\Debug\net7.0\Utils.dll
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\obj\Debug\net7.0\refint\Utils.dll
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\obj\Debug\net7.0\Utils.pdb
+C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Utils\obj\Debug\net7.0\ref\Utils.dll

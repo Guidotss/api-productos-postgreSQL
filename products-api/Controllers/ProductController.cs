@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DataAccess.Dtos;
+using DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Mvc;
+using Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,32 +11,106 @@ namespace products_api.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        // GET: api/<ProductController>
+        private readonly IUnitOfWork _unitOfwork;
+        
+        public ProductController(IUnitOfWork unitOfWork)
+        {
+            _unitOfwork = unitOfWork;
+            
+        }
+        
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "product1", "product2" };
+        public async Task<IActionResult>GetAllProducts()
+        {   
+            try
+            {
+                var products = await _unitOfwork.Product.GetAllAsync();
+                return Ok(new { ok = true, products }); 
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, new { ok = false, error = "Internal server error", message = ex.Message }); 
+            }
         }
-        // GET api/<ProductController>/5
+
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<IActionResult> GetProductById(Guid id)
         {
-            return "value";
+            try
+            {
+                var product = await _unitOfwork.Product.GetAsync(id);
+                if(product == null)
+                {
+                    return NotFound(new { ok = false, message = "Product with id: " + id + " not found" }); 
+                }
+
+                return Ok(new { ok = true, product }); 
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, new { ok = false, error = "Internal server error", message = ex.Message }); 
+            }
         }
 
-        // POST api/<ProductController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult>CreateProduct([FromBody] ProductDto product)
         {
+            if(product == null)
+            {
+                return BadRequest(new { ok = false, message = "Product is required" }); 
+            }
+
+            try
+            {
+                var newProduct = new Product
+                {
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    Quantity = product.Quantity
+                };
+
+                await _unitOfwork.Product.AddAsync(newProduct);
+                await _unitOfwork.Save();
+                return Ok(new { ok = true, message = "Product created successfully", newProduct });
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, new { ok = false, error = "Internal server error", message = ex.Message }); 
+            }
         }
 
-        // PUT api/<ProductController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> UpdateProduct (Guid id, [FromBody] UpdateProductDto productData)
         {
+            if(productData == null)
+            {
+                BadRequest(new { ok = false, message = "Product data is required" }); 
+            }
+
+            try
+            {
+                var product = _unitOfwork.Product.GetAsync(id).Result;
+                if(product == null)
+                {
+                    return NotFound(new { ok = false, message = "Product with id: " + id + " not found" }); 
+                }
+
+                product.Name = productData.Name ?? product.Name;
+                product.Description = productData.Description ?? product.Description;
+                product.Price = productData.Price ?? product.Price;
+                product.Quantity = productData.Quantity ?? product.Quantity;
+
+                _unitOfwork.Product.Update(product);
+                await _unitOfwork.Save();
+                return Ok(new { ok = true, message = "Product updated successfully", product });
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, new { ok = false, error = "Internal server error", message = ex.Message }); 
+            }   
         }
 
-        // DELETE api/<ProductController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
