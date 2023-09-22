@@ -139,3 +139,4 @@ C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\products-api\obj\Debu
 C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\products-api\obj\Debug\net7.0\products-api.pdb
 C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\products-api\obj\Debug\net7.0\products-api.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\products-api\obj\Debug\net7.0\ref\products-api.dll
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\products-api\bin\Debug\net7.0\BCrypt.Net-Next.dll

@@ -37,3 +37,4 @@ C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Models\obj\Debug\net7
 C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.pdb
 C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\C#\api-productos-postgreSQL\Models\obj\Debug\net7.0\ref\Models.dll
+C:\Users\guido\OneDrive\Escritorio\api-productos-postgreSQL\Models\obj\Debug\net7.0\Models.csproj.AssemblyReference.cache

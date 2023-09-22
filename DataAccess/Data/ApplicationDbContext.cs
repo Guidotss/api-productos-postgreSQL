@@ -18,7 +18,7 @@ namespace DataAccess.Data
         }
 
         public DbSet<Product> Product { get; set; } = default!;
-
+        public DbSet<User> Users { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
