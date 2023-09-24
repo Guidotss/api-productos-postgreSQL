@@ -12,11 +12,13 @@ namespace DataAccess.Repository
     {
         private readonly ApplicationDbContext _db;
         public IProductRepository Product { get; private set; }
+        public IUserRepository User { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
-            Product = new ProductRepository(_db); 
+            Product = new ProductRepository(_db);
+            User = new UserRepository(_db); 
         }
 
         public void Dispose()

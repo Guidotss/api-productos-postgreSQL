@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q2L/QP8pQQ73RV4qMG/VYj3KpjKG2x5LS1eyDYUqVXP8CMvLoWRm2WLAxoLLg1pQpzIfAhza04m3+YVwexSlwA==",
+  "dgSpecHash": "wU4Tyjbuincm6gtC3QnRE7REH+0P8K6IFGDYUcfkTlaI65wqVRa2GjoonV/epiAvK4B3zab9ouPoXnGTBn/oaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\guido\\OneDrive\\Escritorio\\api-productos-postgreSQL\\products-api\\products-api.csproj",
   "expectedPackageFiles": [

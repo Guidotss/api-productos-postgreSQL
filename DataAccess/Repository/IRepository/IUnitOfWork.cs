@@ -9,6 +9,7 @@ namespace DataAccess.Repository.IRepository
     public interface IUnitOfWork : IDisposable  
     {
         IProductRepository Product { get; }
+        IUserRepository User { get; }
 
         Task Save(); 
     }

@@ -26,8 +26,7 @@ namespace DataAccess.Configuration
                 .HasMaxLength(50);
 
             builder.Property(user => user.Password)
-                .IsRequired()
-                .HasMaxLength(50);
+                .IsRequired(); 
 
             builder.HasKey(user => user.Name).HasName("PK_User_Name"); 
         }

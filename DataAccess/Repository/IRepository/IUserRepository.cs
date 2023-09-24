@@ -14,6 +14,7 @@ namespace DataAccess.Repository.IRepository
         public string HashPassword(string password);
 
         public bool VerifyPassword(User user, string password);
-
+        
+        public abstract Task<User> GetUserByEmail(string email);
     }
 }

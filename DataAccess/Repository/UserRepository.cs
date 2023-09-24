@@ -1,5 +1,6 @@
 ﻿using DataAccess.Data;
 using DataAccess.Repository.IRepository;
+using Microsoft.EntityFrameworkCore;
 using Models;
 using System;
 using System.Collections.Generic;
@@ -22,14 +23,24 @@ namespace DataAccess.Repository
             return BCrypt.Net.BCrypt.HashPassword(password);
         }
 
-        public void Update(User user)
+        public async void Update(User _user)
         {
-            throw new NotImplementedException(); 
+            var productFromDb = _db.Users.FirstOrDefault(user => user.Id == _user.Id);
+            if(productFromDb != null)
+            {
+                productFromDb.Name = _user.Name;
+                productFromDb.Email = _user.Email;
+                productFromDb.Password = _user.Password;
+
+                await _db.SaveChangesAsync(); 
+            }
         }
 
         public bool VerifyPassword(User user, string password)
         {
             return BCrypt.Net.BCrypt.Verify(password, user.Password);
         }
+
+        public async Task<User> GetUserByEmail(string email) => await _db.Users.FirstOrDefaultAsync(Task => Task.Email == email);
     }
 }
